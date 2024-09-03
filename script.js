@@ -1,6 +1,9 @@
 const btn = document.querySelector(".playBtn");
 const choice = document.querySelector(".choice");
-
+const playerScore = document.querySelector(".playerPoint");
+const computerScore = document.querySelector(".compPoint");
+const playerResult = document.querySelector(".playerResult");
+const computerResult = document.querySelector(".computerResult");
 const game = () => {
   const computer = Math.ceil(Math.random() * 30);
   if (computer < 10) {
@@ -20,15 +23,19 @@ btn.addEventListener("click", () => {
   ) {
     const computerChoice = game();
     const result = choice.value == computerChoice ? "Won" : "Lost";
-    alert(
-      "Your choice : " +
-        choice.value +
-        "\nComputer's choice : " +
-        computerChoice +
-        "\nYou " +
-        result +
-        "!!"
-    );
+
+    playerScore.textContent =
+      result == "Won"
+        ? Number(playerScore.textContent) + 1
+        : playerScore.textContent;
+    computerScore.textContent =
+      result == "Lost"
+        ? Number(computerScore.textContent) + 1
+        : computerScore.textContent;
+
+    playerResult.textContent = "Your choice : " + choice.value;
+
+    computerResult.textContent = "Computer's choice : " + computerChoice;
   } else {
     alert("Please choose from either rock, paper or scissors");
   }
