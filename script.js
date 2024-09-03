@@ -5,6 +5,8 @@ const computerScore = document.querySelector(".compPoint");
 const playerResult = document.querySelector(".playerResult");
 const computerResult = document.querySelector(".computerResult");
 const finalResult = document.querySelector(".finalResult");
+
+choice.focus();
 const game = () => {
   const computer = Math.ceil(Math.random() * 30);
   if (computer < 10) {
@@ -52,4 +54,6 @@ const updatescore = () => {
 
 btn.addEventListener("click", () => {
   updatescore();
+  choice.value = "";
+  choice.focus();
 });
