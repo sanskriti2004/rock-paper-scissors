@@ -27,7 +27,10 @@ const updatescore = () => {
   ) {
     const computerChoice = game();
     const result = choice.value == computerChoice ? "Won" : "Lost";
-
+    if (playerScore.textContent == 5 || computerScore.textContent == 5) {
+      playerScore.textContent = 0;
+      computerScore.textContent = 0;
+    }
     playerScore.textContent =
       result == "Won"
         ? Number(playerScore.textContent) + 1
@@ -42,8 +45,6 @@ const updatescore = () => {
     computerResult.textContent = "Computer's choice : " + computerChoice;
 
     if (playerScore.textContent == 5 || computerScore.textContent == 5) {
-      playerScore.textContent = 0;
-      computerScore.textContent = 0;
       finalResult.textContent =
         playerScore.textContent == 5 ? "YOU WON!!" : "YOU LOST!!";
     }
