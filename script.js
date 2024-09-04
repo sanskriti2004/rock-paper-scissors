@@ -40,9 +40,9 @@ const updatescore = () => {
         ? Number(computerScore.textContent) + 1
         : computerScore.textContent;
 
-    playerResult.textContent = "Your choice : " + choice.value;
+    playerResult.textContent = "you chose : " + choice.value;
 
-    computerResult.textContent = "Computer's choice : " + computerChoice;
+    computerResult.textContent = "opp chose : " + computerChoice;
 
     if (playerScore.textContent == 5 || computerScore.textContent == 5) {
       finalResult.textContent =

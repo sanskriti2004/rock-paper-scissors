@@ -13,11 +13,12 @@
 .title {
   font-family: "Press Start 2P";
   text-align: center;
-  font-size: 35px;
+  font-size: 45px;
   margin-top: 40px;
 }
 .score {
   font-size: 50px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 .playerScore,
@@ -27,13 +28,13 @@
   padding: 10px;
   font-size: 30px;
   font-family: "raleway dots";
-  margin-bottom: 20px;
 }
 
 .choice {
   font-size: 30px;
   font-family: "Press Start 2P";
   text-align: center;
+  margin-top: 20px;
   padding: 10px;
   border-radius: 10px;
 }
@@ -49,4 +50,26 @@
   margin-top: 20px;
   width: 130px;
   letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.playBtn:hover {
+  cursor: pointer;
+  background-color: #ff8000;
+  color: white;
+}
+
+.playerResult,
+.computerResult {
+  text-align: center;
+  font-size: 20px;
+  font-family: "raleway dots";
+  padding-left: 30px;
+  margin-top: 20px;
+}
+
+.finalResult {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 40px;
+  font-family: "Press Start 2P";
 }
