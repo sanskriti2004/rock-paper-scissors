@@ -1,0 +1,52 @@
+* {
+  background-color: #0c0c0c;
+  color: white;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-family: "VT323";
+}
+.title {
+  font-family: "Press Start 2P";
+  text-align: center;
+  font-size: 35px;
+  margin-top: 40px;
+}
+.score {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.playerScore,
+.computerScore,
+.playerPoint,
+.compPoint {
+  padding: 10px;
+  font-size: 30px;
+  font-family: "raleway dots";
+  margin-bottom: 20px;
+}
+
+.choice {
+  font-size: 30px;
+  font-family: "Press Start 2P";
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+::placeholder {
+  opacity: 0.2;
+}
+
+.playBtn {
+  font-size: 30px;
+  font-family: "VT323";
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 130px;
+  letter-spacing: 2px;
+}

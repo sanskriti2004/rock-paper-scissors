@@ -4,23 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway+Dots&family=VT323&display=swap"
+      rel="stylesheet"
+    />
     <title>R-P-S</title>
   </head>
   <body>
-    <div>
-      <h1 class="title">Play Rock, Paper, Scissors against a Computer!!</h1>
+    <h1 class="title">ROCK PAPER & SCISSORS</h1>
+    <div class="body">
+      <h3 class="score">score</h3>
 
-      <h3 class="score">SCORE</h3>
-
-      <span class="myScore">you : <span class="playerPoint">0</span></span>
+      <span class="playerScore">you : <span class="playerPoint">0</span></span>
       <span class="computerScore"
         >computer : <span class="compPoint">0</span></span
       >
 
-      <h4>Choose rock, paper or scissors</h4>
-      <input type="text" class="choice" />
+      <input type="text" class="choice" placeholder="your choice..." />
 
-      <button class="playBtn">Play</button>
+      <button class="playBtn">play</button>
       <div class="result">
         <span class="playerResult"> </span>
         <span class="computerResult"> </span>
