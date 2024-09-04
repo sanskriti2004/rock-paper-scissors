@@ -1,9 +1,11 @@
-#Rock Paper Scissors Game
+## Rock Paper Scissors Game
 
-Overview
+# Overview
+
 This is a simple Rock, Paper, Scissors game created using HTML, CSS, and JavaScript. The game allows users to play the classic hand game against the computer, which randomly selects its move. The user can select their move by clicking on the corresponding button, and the game will display the result immediately.
 
-Game Rules
+# Game Rules
+
 Rock beats Scissors
 Scissors beats Paper
 Paper beats Rock
