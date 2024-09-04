@@ -26,13 +26,23 @@ const updatescore = () => {
     choice.value == "scissors"
   ) {
     const computerChoice = game();
-    const result = choice.value == computerChoice ? "Won" : "Lost";
+    const possibility =
+      (choice.value == "rock" && computerChoice == "scissors") ||
+      (choice.value == "paper" && computerChoice == "rock") ||
+      (choice.value == "scissors" && computerChoice == "paper");
+    const result = possibility
+      ? "Won"
+      : choice.value == computerChoice
+      ? "Tie"
+      : "Lost";
     if (playerScore.textContent == 5 || computerScore.textContent == 5) {
       playerScore.textContent = 0;
       computerScore.textContent = 0;
     }
     playerScore.textContent =
-      result == "Won"
+      result == "Tie"
+        ? playerScore.textContent
+        : result == "Won"
         ? Number(playerScore.textContent) + 1
         : playerScore.textContent;
     computerScore.textContent =
