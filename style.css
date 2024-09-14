@@ -104,21 +104,26 @@
 
 /*phone*/
 @media (max-width: 450px) {
+  * {
+    margin: auto;
+    max-width: 320px;
+  }
   .body {
-    max-width: 400px;
+    max-width: 320px;
     align-items: center;
     justify-content: center;
     margin: 3px 2px;
   }
   .title {
-    font-size: 14px;
+    font-size: 25px;
+    margin-top: 10px;
   }
   .choice {
-    font-size: 10px;
+    font-size: 13px;
   }
   .playBtn {
-    font-size: 13px;
-    padding: 5px;
+    font-size: 20px;
+    padding: 5px 10px;
     width: 80px;
   }
   .playerResult,
