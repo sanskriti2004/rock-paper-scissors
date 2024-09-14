@@ -7,14 +7,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0;
   font-family: "VT323";
 }
 .title {
   font-family: "Press Start 2P";
   text-align: center;
   font-size: 45px;
-  margin-top: 40px;
   color: #e3e841;
 }
 .score {
@@ -26,7 +24,6 @@
 .computerScore,
 .playerPoint,
 .compPoint {
-  padding: 10px;
   font-size: 30px;
   font-family: "raleway dots";
 }
@@ -87,4 +84,58 @@
   font-size: 40px;
   font-family: "Press Start 2P";
   color: #6b216a;
+}
+
+/*big ass screen*/
+@media (max-width: 2720px) {
+}
+
+/*desktop*/
+@media (max-width: 1600px) {
+}
+
+/*laptop*/
+@media (max-width: 1024px) {
+}
+
+/*tablet*/
+@media (max-width: 780px) {
+}
+
+/*phone*/
+@media (max-width: 450px) {
+  .body {
+    max-width: 400px;
+    align-items: center;
+    justify-content: center;
+    margin: 3px 2px;
+  }
+  .title {
+    font-size: 14px;
+  }
+  .choice {
+    font-size: 10px;
+  }
+  .playBtn {
+    font-size: 13px;
+    padding: 5px;
+    width: 80px;
+  }
+  .playerResult,
+  .computerResult {
+    font-size: 10px;
+    text-align: center;
+  }
+  .finalResult {
+    font-size: 30px;
+  }
+  .playerScore,
+  .computerScore,
+  .playerPoint,
+  .compPoint {
+    font-size: 20px;
+  }
+  .score {
+    font-size: 40px;
+  }
 }
