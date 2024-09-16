@@ -51,14 +51,9 @@
 }
 
 .playBtn {
-  font-size: 30px;
   font-family: "VT323";
-  padding: 10px;
   border-radius: 10px;
-  margin-top: 20px;
-  width: 130px;
   letter-spacing: 2px;
-  margin-bottom: 20px;
   background-color: #ab5b1a;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -96,6 +91,54 @@
 
 /*tablet*/
 @media (max-width: 780px) {
+  * {
+    margin: auto;
+    max-width: 750px;
+    overflow: hidden;
+  }
+  .body {
+    align-items: center;
+    justify-content: center;
+    margin: 10px 7px;
+  }
+  .title {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .choice {
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-top: 30px;
+  }
+  ::placeholder {
+    letter-spacing: 0px;
+  }
+  .playBtn {
+    font-size: 25px;
+    padding: 7px 30px;
+    text-align: center;
+    width: 120px;
+    margin: 30px;
+  }
+  .playerResult,
+  .computerResult {
+    font-size: 20px;
+    padding: 5px 10px;
+    margin-top: 40px;
+  }
+  .finalResult {
+    font-size: 30px;
+    margin-top: 40px;
+  }
+  .playerScore,
+  .computerScore,
+  .playerPoint,
+  .compPoint {
+    font-size: 20px;
+  }
+  .score {
+    font-size: 40px;
+  }
 }
 
 /*phone*/
@@ -106,7 +149,6 @@
     overflow: hidden;
   }
   .body {
-    max-width: 320px;
     align-items: center;
     justify-content: center;
     margin: 3px 2px;
@@ -127,6 +169,7 @@
     font-size: 20px;
     padding: 5px 10px;
     width: 80px;
+    margin: 20px;
   }
   .playerResult,
   .computerResult {
